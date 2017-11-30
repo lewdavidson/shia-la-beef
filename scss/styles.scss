@@ -1,0 +1,77 @@
+@import "reset";
+@import "global";
+@import "mediaQueries";
+@import "fonts";
+@import "grid";
+@import "hero";
+@import "nav";
+@import "sidebar";
+@import "buttons";
+@import "forms";
+@import "footer";
+@import "helpers";
+@import "animations";
+
+body {
+  background: #000;
+}
+
+// NAV
+
+nav header {
+  align-self: flex-start;
+  padding-left: 10px;
+}
+nav header img {
+  width: 33vw;
+  height: auto;
+}
+// HERO
+
+// DOINKS
+.lil-doink {
+  width: 10vw;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%, 0);
+}
+
+.character {
+  color: #d28f3a;
+  padding: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+//HORIZONTAL COOLS
+.horizontal-cool{
+  height: 60px;
+  width: 100%;
+  position: relative;
+  img.shovel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 175px;
+    transform: translate(-50%, -50%);
+  }
+  img.lizard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    
+    transform: translate(-50%, -50%);
+  }
+  img.lipstick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    transform: translate(-50%, -50%);
+  }
+
+}
