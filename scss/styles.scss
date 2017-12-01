@@ -16,6 +16,9 @@ body {
   background: #000;
 }
 
+.pointless-container {
+  padding-top: 60px;
+}
 // NAV
 
 nav header {
@@ -27,6 +30,9 @@ nav header img {
   height: auto;
 }
 // HERO
+.hero {
+  margin-bottom: 10vh;
+}
 
 // DOINKS
 .lil-doink {
@@ -39,11 +45,18 @@ nav header img {
 
 .character {
   color: #d28f3a;
-  padding: 10px;
+  padding:10px;
 
   img {
     width: 100%;
+    border-radius: 5%;
   }
+}
+
+.info {
+  border: solid 1px #d28f3a;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 //HORIZONTAL COOLS
@@ -63,7 +76,7 @@ nav header img {
     top: 50%;
     left: 50%;
     height: 60px;
-    
+
     transform: translate(-50%, -50%);
   }
   img.lipstick {
@@ -73,5 +86,62 @@ nav header img {
     height: 60px;
     transform: translate(-50%, -50%);
   }
+}
 
+//IPAD
+
+@media screen and (min-width: 760px) {
+  nav header {
+    align-self: flex-start;
+    padding-left: 5px;
+  }
+  nav header img {
+    width: 31vw;
+    height: auto;
+  }
+
+  .info {
+    margin-top: 2vh;
+  }
+
+  .character img {
+    margin-top: 2vh;
+  }
+}
+
+//LAPTOP
+@media screen and (min-width: 1000px) {
+  .hero{
+    height: 50vh;
+    width: 38vw;
+    float: left;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+  }
+  .lil-doink{
+    display: none;
+  }
+  .horizontal-cool {
+    display: none;
+  }
+  .character {
+    float: left;
+    height: 200px;
+    img {
+      height: 200px;
+      width: auto;
+      border-radius: 5%;
+    }
+  }
+  .info{
+    float: right;
+    text-align: left;
+    margin-left: 10px;
+    height: 181px
+  }
+
+  // #zero {
+  //   padding-top: 75px;
+  //   height: 275px
+  // }
 }

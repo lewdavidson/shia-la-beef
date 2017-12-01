@@ -114,5 +114,6 @@ function heroSlideshow() {
 ////////// Add Fucktons to Call HERE//////////
 
 mobileMenu();
+animations(); 
 
 });
